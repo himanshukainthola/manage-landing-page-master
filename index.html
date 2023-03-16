@@ -7,6 +7,9 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Manage landing page</title>
@@ -15,15 +18,15 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="relative container mx-auto p-6">
+  <nav class="relative container mx-auto p-8 xl xl:px-40 xl:py-12">
     <!-- Flex container -->
     <div class="flex item-center justify-between">
       <!-- Logo -->
-      <div class="pt-2">
+      <div class="pt-2 w-28 flex md:w-36 md:items-center">
         <img src="images/logo.svg" alt="">
       </div>
       <!-- Menu Item -->
-      <div class="hidden space-x-6 md:flex">
+      <div class="hidden space-x-8 text-sm font-medium md:flex md:items-center">
         <a href="#" class=" hover:text-darkGrayishBlue">Pricing</a>
         <a href="#" class=" hover:text-darkGrayishBlue">Product</a>
         <a href="#" class=" hover:text-darkGrayishBlue">About</a>
@@ -32,22 +35,24 @@
       </div>
       <!-- Button -->
       <a href="#"
-        class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">GetStarted</a>
+        class="hidden p-3 px-8 pt-3 text-white text-xs bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block shadow-lg shadow-brightRedLight ">Get
+        Started</a>
       <!--Hamburger menu  -->
 
-      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-        <img src="images/icon-hamburger.svg" alt="">
+      <button id="menu-btn" class=" block md:hidden focus:outline-none">
+        <img class="hamburger" src="images/icon-hamburger.svg" alt="">
+        <img class="close hidden" src="images/icon-close.svg" alt="">
       </button>
     </div>
     <!-- Mobile Menu -->
     <div class="md:hidden">
       <div id="menu"
-        class="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-        <a href="#">Pricing</a>
-        <a href="#">Product</a>
-        <a href="#">About Us</a>
-        <a href="#">Careers</a>
-        <a href="#">Community</a>
+        class="absolute flex-col items-center hidden self-end py-10 mt-11 space-y-6 text-darkBlue font-bold bg-white rounded-md sm:w-auto sm:self-center left-6 right-6 drop-shadow-2xl">
+        <a href="#" class=" hover:text-darkGrayishBlue">Pricing</a>
+        <a href="#" class=" hover:text-darkGrayishBlue">Product</a>
+        <a href="#" class=" hover:text-darkGrayishBlue">About Us</a>
+        <a href="#" class=" hover:text-darkGrayishBlue">Careers</a>
+        <a href="#" class=" hover:text-darkGrayishBlue">Community</a>
       </div>
     </div>
   </nav>
@@ -56,19 +61,20 @@
   <section id="hero">
     <!-- Flex Contianer -->
     <div class="container flex flex-col-reverse item-center 
-    px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0">
+    px-6 mx-auto mt-5 space-y-2 gap-1 md:flex-row md:space-y-0 xl:px-40 xl:my-14 ">
       <!-- Left item -->
-      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
-          Bring everyone together to build better products
+      <div class="flex flex-col mb-16 space-y-2 md:w-1/2 xl:pt-12 xl:gap-7">
+        <h1
+          class="max-w-md text-4xl leading-snug text-darkBlue font-bold text-center md:text-5xl md:text-left lg:max-w-lg lg:font-semibold lg:text-6xl">
+          Bring everyone together to build better products.
         </h1>
-        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+        <p class="max-w-sm text-center leading-6 text-darkGrayishBlue md:text-left xl:leading-7">
           Manage makes it simple for software teams to plan day-to-day tasks while keeping the latger team goals in
           view.
         </p>
         <div class="flex justify-center md:justify-start">
-          <a href="#" class=" p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline
-          hover:bg-brightRedLight">GetStarted</a>
+          <a href="#" class=" mt-7 p-3 px-8 pt-3 text-xs text-white bg-brightRed rounded-full baseline
+          hover:bg-brightRedLight shadow-lg shadow-brightRedLight xl:mt-0">Get Started</a>
         </div>
       </div>
       <!-- Image -->
@@ -81,13 +87,13 @@
   <!-- Features Section -->
   <section id="features">
     <!-- Flex Contianer -->
-    <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+    <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row xl:px-40 xl:my-12">
       <!-- What's Different -->
-      <div class="flex flex-col space-y-12 md:w-1/2">
-        <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
-          What's differet about Manage?
+      <div class="flex flex-col space-y-6 px-6 md:w-1/2">
+        <h2 class="max-w-md text-3xl leading-10 font-bold text-darkBlue text-center md:text-left xl:text-4xl">
+          What's different about Manage?
         </h2>
-        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+        <p class="max-w-sm text-sm leading-7 text-center text-darkGrayishBlue md:text-left">
           Manage provides all the functionality your team needs, without the
           complexity. Our software is tailor-made for modern digital product
           teams.
@@ -100,19 +106,19 @@
           <!-- Heading -->
           <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              <div class="px-6 py-2 text-white rounded-full md:py-1 bg-brightRed">
                 01
               </div>
-              <h3 class="text-base font-bold md:mb-4 md:hidden">
+              <h3 class="text-base text-darkBlue font-bold md:mb-4 md:hidden">
                 Track company-wide progress
               </h3>
             </div>
           </div>
           <div>
-            <h3 class="hidden mb-4 text-lg font-bold md:block">
+            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block">
               Track company-wide progress
             </h3>
-            <p class="text-darkGrayishBlue">
+            <p class="text-darkGrayishBlue text-sm leading-7">
               See how your day-to-day tasks fit into the wider vision. Go from
               tracking progress at the milestone level all the way down to the
               smallest of details. Never lose sight of the bigger picture
@@ -126,22 +132,22 @@
           <!-- Heading -->
           <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              <div class="px-6 py-2 text-white rounded-full md:py-1 bg-brightRed">
                 02
               </div>
-              <h3 class="text-base font-bold md:mb-4 md:hidden">
+              <h3 class="text-base text-darkBlue font-bold md:mb-4 md:hidden">
                 Advanced built-in reports
               </h3>
             </div>
           </div>
           <div>
-            <h3 class="hidden mb-4 text-lg font-bold md:block">
+            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block">
               Advanced built-in reports
             </h3>
-            <p class="text-darkGrayishBlue">
+            <p class="text-darkGrayishBlue text-sm leading-7">
               Set internal delivery estimates and track progress toward
               company goals. Our customisable dashboard helps you build out
-              the reports you need to keep key stakeholders informed.
+              the reports you need to keep key stakeholders informed..
             </p>
           </div>
         </div>
@@ -151,19 +157,19 @@
           <!-- Heading -->
           <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              <div class="px-6 py-2 text-white rounded-full md:py-1 bg-brightRed">
                 03
               </div>
-              <h3 class="text-base font-bold md:mb-4 md:hidden">
+              <h3 class="text-base text-darkBlue font-bold md:mb-4 md:hidden">
                 Everything you need in one place
               </h3>
             </div>
           </div>
           <div>
-            <h3 class="hidden mb-4 text-lg font-bold md:block">
+            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block">
               Everything you need in one place
             </h3>
-            <p class="text-darkGrayishBlue">
+            <p class="text-darkGrayishBlue text-sm leading-7">
               Stop jumping from one service to another to communicate, store
               files, track tasks and share documents. Manage offers an
               all-in-one team productivity solution.
@@ -177,10 +183,10 @@
   <!-- Testimonials -->
   <section id="testimonials">
     <!-- Contianer to heading and testm blocks -->
-    <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+    <div class="max-w-6xl px-5 mx-auto mt-20 text-center">
       <!-- Heading -->
-      <h2 class="text-4xl font-bold text-center">
-        What they've said?
+      <h2 class="text-4xl  text-darkBlue font-bold text-center">
+        What they've said
       </h2>
       <!-- Testimonials Container -->
       <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
@@ -189,7 +195,7 @@
         <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
           <img src="images/avatar-anisha.png" class="w-16 -mt-14 " alt="">
           <h5 class="text-lg font-bold">Anisha Li</h5>
-          <p class="text-sm text-darkGrayishBlue">
+          <p class="text-sm leading-7 text-darkGrayishBlue">
             “Manage has supercharged our team’s workflow. The ability to
             maintain visibility on larger milestones at all times keeps
             everyone motivated.”
@@ -200,7 +206,7 @@
         <div class=" hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
           <img src="images/avatar-ali.png" class="w-16 -mt-14 " alt="">
           <h5 class="text-lg font-bold">Ali Bravo</h5>
-          <p class="text-sm text-darkGrayishBlue">
+          <p class="text-sm leading-7 text-darkGrayishBlue">
             “We have been able to cancel so many other subscriptions since
             using Manage. There is no more cross-channel confusion and
             everyone is much more focused.”
@@ -211,7 +217,7 @@
         <div class=" hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
           <img src="images/avatar-richard.png" class="w-16 -mt-14 " alt="">
           <h5 class="text-lg font-bold">Richard Watts</h5>
-          <p class="text-sm text-darkGrayishBlue">
+          <p class="text-sm leading-7 text-darkGrayishBlue">
             “Manage has supercharged our team’s workflow. The ability to
             maintain visibility on larger milestones at all times keeps
             everyone motivated.”
@@ -220,7 +226,7 @@
       </div>
       <!-- Button -->
       <div class="my-16">
-        <a href="#" class=" p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline
+        <a href="#" class=" p-3 px-6 pt-3 text-sm  text-white bg-brightRed shadow-lg shadow-red-400 rounded-full baseline 
           hover:bg-brightRedLight">GetStarted</a>
       </div>
     </div>
@@ -230,14 +236,14 @@
   <section class="bg-brightRed" id="cta">
     <!-- flex Container -->
     <div
-      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex-row md:space-y-0">
+      class="container flex flex-col items-center justify-between px-7 py-24 mx-auto space-y-12 md:flex-row md:space-y-0 xl:px-40">
       <!-- Heading -->
-      <h2 class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left">
-        Simplify how your team works today
+      <h2 class="text-4xl leading-snug font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left">
+        Simplify how your team works today.
       </h2>
       <!-- Button -->
       <div>
-        <a href="#" class=" p-3 px-6 pt-2 text-brightRed bg-white rounded-full  shadow-2xl baseline
+        <a href="#" class=" p-3 px-6 pt-3 text-sm font-bold text-brightRed bg-white rounded-full  shadow-2xl baseline
           hover:bg-gray-300">GetStarted</a>
       </div>
     </div>
@@ -246,50 +252,51 @@
   <!-- Footer -->
   <footer class="bg-veryDarkBlue">
     <!-- Flex contianer -->
-    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+    <div
+      class="container flex flex-col-reverse justify-between px-6 py-4 mx-auto space-y-8 md:flex-row md:space-y-0 xl:px-40">
       <!-- Logo and social links container -->
       <div
         class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-        <div class="mx-auto my-6 text-center text-white md:hidden">
+        <div class="mx-auto mt-12 text-xs text-center text-darkGrayishBlue md:hidden">
           Copyright &copy; 2022, All Rights Reserved
         </div>
         <!-- logo -->
         <div>
-          <img src="images/logo-white.svg " class="h-8" alt="">
+          <img src="images/logo-white.svg " class="h-7 lg:h-6" alt="">
         </div>
         <!-- Social Links Container -->
-        <div class="flex justify-center space-x-4">
+        <div class="flex justify-between space-x-8 lg:space-x-4">
           <!-- link 1 -->
           <a href="#">
-            <img src="images/icon-facebook.svg" alt="" class="h-8">
+            <img src="images/icon-facebook.svg" alt="" class="h-8 lg:h-5">
           </a>
           <!-- link 2 -->
           <a href="#">
-            <img src="images/icon-youtube.svg" alt="" class="h-8">
+            <img src="images/icon-youtube.svg" alt="" class="h-8 lg:h-5">
           </a>
           <!-- link 3 -->
           <a href="#">
-            <img src="images/icon-twitter.svg" alt="" class="h-8">
+            <img src="images/icon-twitter.svg" alt="" class="h-8 lg:h-5">
           </a>
           <!-- link 4 -->
           <a href="#">
-            <img src="images/icon-pinterest.svg" alt="" class="h-8">
+            <img src="images/icon-pinterest.svg" alt="" class="h-8 lg:h-5">
           </a>
           <!-- link 5 -->
           <a href="#">
-            <img src="images/icon-instagram.svg" alt="" class="h-8">
+            <img src="images/icon-instagram.svg" alt="" class="h-8 lg:h-5">
           </a>
         </div>
       </div>
       <!-- list container -->
-      <div class="flex justify-around space-x-32">
-        <div class="flex flex-col space-y-3 text-white">
+      <div class="flex justify-evenly space-x-32">
+        <div class="flex flex-col space-y-3 text-white lg:text-sm">
           <a href="#" class="hover:text-brightRed">Home</a>
           <a href="#" class="hover:text-brightRed">Pricing</a>
           <a href="#" class="hover:text-brightRed">Product</a>
           <a href="#" class="hover:text-brightRed">About Us</a>
         </div>
-        <div class="flex flex-col space-y-3 text-white">
+        <div class="flex flex-col space-y-3 text-white lg:text-sm">
           <a href="#" class="hover:text-brightRed">Careers</a>
           <a href="#" class="hover:text-brightRed">Community</a>
           <a href="#" class="hover:text-brightRed">Privacy Policy</a>
@@ -300,8 +307,10 @@
       <div class="flex flex-col justify-between">
         <form action="">
           <div class="flex space-x-3">
-            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Update in your inbox">
-            <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none placeholder:text-sm"
+              placeholder="Update in your inbox...">
+            <button
+              class="px-6 py-2 text-sm text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
               Go</button>
           </div>
         </form>
@@ -311,6 +320,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/app.js"></script>
 </body>
 
 </html>
