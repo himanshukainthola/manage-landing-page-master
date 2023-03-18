@@ -26,7 +26,7 @@ body {
         width: 750px;
         height: 700px;
         left: -32%;
-        top: 100%;
+        top: 125%;
         background-image: url('../images/bg-tablet-pattern.svg');
         background-size: cover;
         z-index: -1;
