@@ -18,9 +18,9 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="relative container mx-auto p-8 xl xl:px-40 xl:py-12">
+  <nav class="relative container mx-auto p-8 md:px-0 lg:p-8 xl:px-40 xl:py-12 ">
     <!-- Flex container -->
-    <div class="flex item-center justify-between">
+    <div class="flex item-center justify-between md:justify-around lg:justify-between">
       <!-- Logo -->
       <div class="pt-2 w-28 flex md:w-36 md:items-center">
         <img src="images/logo.svg" alt="">
@@ -74,7 +74,7 @@
         </p>
         <div class="flex justify-center md:justify-start">
           <a href="#" class=" mt-7 p-3 px-8 pt-3 text-xs text-white bg-brightRed rounded-full baseline
-          hover:bg-brightRedLight shadow-lg shadow-brightRedLight xl:mt-0">Get Started</a>
+          hover:bg-brightRedLight shadow-lg shadow-brightRedLight xl:mt-3">Get Started</a>
         </div>
       </div>
       <!-- Image -->
@@ -85,28 +85,30 @@
   </section>
 
   <!-- Features Section -->
-  <section id="features">
+  <section class="features">
     <!-- Flex Contianer -->
-    <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row xl:px-40 xl:my-12">
+    <div
+      class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row xl:px-40 xl:mt-24 xl:mb-36 xl:my-12 "
+      id="features-container">
       <!-- What's Different -->
       <div class="flex flex-col space-y-6 px-6 md:w-1/2">
         <h2 class="max-w-md text-3xl leading-10 font-bold text-darkBlue text-center md:text-left xl:text-4xl">
           What's different about Manage?
         </h2>
-        <p class="max-w-sm text-sm leading-7 text-center text-darkGrayishBlue md:text-left">
+        <p class="max-w-sm text-sm leading-7 text-center text-darkGrayishBlue md:text-left lg:text-base xl:pr-7">
           Manage provides all the functionality your team needs, without the
           complexity. Our software is tailor-made for modern digital product
           teams.
         </p>
       </div>
       <!-- Number List -->
-      <div class="flex  flex-col space-y-8 md:w-1/2">
+      <div class="flex  flex-col space-y-8 md:w-1/2 lg:gap-5">
         <!-- List Items 1 -->
         <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
           <!-- Heading -->
           <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-6 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              <div class="px-6 py-2 text-white rounded-full  bg-brightRed">
                 01
               </div>
               <h3 class="text-base text-darkBlue font-bold md:mb-4 md:hidden">
@@ -115,10 +117,10 @@
             </div>
           </div>
           <div>
-            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block">
+            <h3 class="hidden mb-4 text-base text-darkBlue font-bold md:block">
               Track company-wide progress
             </h3>
-            <p class="text-darkGrayishBlue text-sm leading-7">
+            <p class="text-darkGrayishBlue text-sm leading-7 lg:text-base xl:pr-7">
               See how your day-to-day tasks fit into the wider vision. Go from
               tracking progress at the milestone level all the way down to the
               smallest of details. Never lose sight of the bigger picture
@@ -132,7 +134,7 @@
           <!-- Heading -->
           <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-6 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              <div class="px-6 py-2 text-white rounded-full  bg-brightRed">
                 02
               </div>
               <h3 class="text-base text-darkBlue font-bold md:mb-4 md:hidden">
@@ -141,10 +143,10 @@
             </div>
           </div>
           <div>
-            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block">
+            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block lg:text-base">
               Advanced built-in reports
             </h3>
-            <p class="text-darkGrayishBlue text-sm leading-7">
+            <p class="text-darkGrayishBlue text-sm leading-7 lg:text-base xl:pr-5">
               Set internal delivery estimates and track progress toward
               company goals. Our customisable dashboard helps you build out
               the reports you need to keep key stakeholders informed..
@@ -157,7 +159,7 @@
           <!-- Heading -->
           <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-6 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              <div class="px-6 py-2 text-white rounded-full  bg-brightRed">
                 03
               </div>
               <h3 class="text-base text-darkBlue font-bold md:mb-4 md:hidden">
@@ -166,10 +168,10 @@
             </div>
           </div>
           <div>
-            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block">
+            <h3 class="hidden mb-4 text-lg text-darkBlue font-bold md:block lg:text-base">
               Everything you need in one place
             </h3>
-            <p class="text-darkGrayishBlue text-sm leading-7">
+            <p class="text-darkGrayishBlue text-sm leading-7 lg:text-base xl:pr-7">
               Stop jumping from one service to another to communicate, store
               files, track tasks and share documents. Manage offers an
               all-in-one team productivity solution.
@@ -185,7 +187,7 @@
     <!-- Contianer to heading and testm blocks -->
     <div class="max-w-6xl px-5 mx-auto mt-20 text-center">
       <!-- Heading -->
-      <h2 class="text-4xl  text-darkBlue font-bold text-center">
+      <h2 class="text-4xl  text-darkBlue font-bold text-center lg:text-5xl xl:text-4xl">
         What they've said
       </h2>
       <!-- Testimonials Container -->
@@ -225,9 +227,9 @@
         </div>
       </div>
       <!-- Button -->
-      <div class="my-16">
+      <div class="my-16 xl:mt-14 xl:mb-48">
         <a href="#" class=" p-3 px-6 pt-3 text-sm  text-white bg-brightRed shadow-lg shadow-red-400 rounded-full baseline 
-          hover:bg-brightRedLight">GetStarted</a>
+          hover:bg-brightRedLight xl:text-xs">Get Started</a>
       </div>
     </div>
   </section>
@@ -236,15 +238,16 @@
   <section class="bg-brightRed" id="cta">
     <!-- flex Container -->
     <div
-      class="container flex flex-col items-center justify-between px-7 py-24 mx-auto space-y-12 md:flex-row md:space-y-0 xl:px-40">
+      class="container flex flex-col items-center justify-between px-7 py-24 mx-auto space-y-12 md:flex-row md:space-y-0 xl:px-40 xl:py-20">
       <!-- Heading -->
-      <h2 class="text-4xl leading-snug font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left">
+      <h2
+        class="text-4xl leading-snug font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left xl:text-5xl">
         Simplify how your team works today.
       </h2>
       <!-- Button -->
       <div>
         <a href="#" class=" p-3 px-6 pt-3 text-sm font-bold text-brightRed bg-white rounded-full  shadow-2xl baseline
-          hover:bg-gray-300">GetStarted</a>
+          hover:bg-gray-300 xl:text-xs">Get Started</a>
       </div>
     </div>
   </section>
@@ -253,7 +256,7 @@
   <footer class="bg-veryDarkBlue">
     <!-- Flex contianer -->
     <div
-      class="container flex flex-col-reverse justify-between px-6 py-4 mx-auto space-y-8 md:flex-row md:space-y-0 xl:px-40">
+      class="container flex flex-col-reverse justify-between px-6 py-4 mx-auto space-y-8 md:flex-row md:space-y-0 xl:px-40 xl:py-16">
       <!-- Logo and social links container -->
       <div
         class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
@@ -265,38 +268,38 @@
           <img src="images/logo-white.svg " class="h-7 lg:h-6" alt="">
         </div>
         <!-- Social Links Container -->
-        <div class="flex justify-between space-x-8 lg:space-x-4">
+        <div class="flex justify-between space-x-8 md:space-x-4">
           <!-- link 1 -->
           <a href="#">
-            <img src="images/icon-facebook.svg" alt="" class="h-8 lg:h-5">
+            <img src="images/icon-facebook.svg" alt="" class="h-8 md:h-5">
           </a>
           <!-- link 2 -->
           <a href="#">
-            <img src="images/icon-youtube.svg" alt="" class="h-8 lg:h-5">
+            <img src="images/icon-youtube.svg" alt="" class="h-8 md:h-5">
           </a>
           <!-- link 3 -->
           <a href="#">
-            <img src="images/icon-twitter.svg" alt="" class="h-8 lg:h-5">
+            <img src="images/icon-twitter.svg" alt="" class="h-8 md:h-5">
           </a>
           <!-- link 4 -->
           <a href="#">
-            <img src="images/icon-pinterest.svg" alt="" class="h-8 lg:h-5">
+            <img src="images/icon-pinterest.svg" alt="" class="h-8 md:h-5">
           </a>
           <!-- link 5 -->
           <a href="#">
-            <img src="images/icon-instagram.svg" alt="" class="h-8 lg:h-5">
+            <img src="images/icon-instagram.svg" alt="" class="h-8 md:h-5">
           </a>
         </div>
       </div>
       <!-- list container -->
-      <div class="flex justify-evenly space-x-32">
-        <div class="flex flex-col space-y-3 text-white lg:text-sm">
+      <div class="flex justify-evenly lg:space-x-32">
+        <div class="flex flex-col space-y-3 text-sm text-slate-300 lg:text-sm xl:gap-2">
           <a href="#" class="hover:text-brightRed">Home</a>
           <a href="#" class="hover:text-brightRed">Pricing</a>
           <a href="#" class="hover:text-brightRed">Product</a>
           <a href="#" class="hover:text-brightRed">About Us</a>
         </div>
-        <div class="flex flex-col space-y-3 text-white lg:text-sm">
+        <div class="flex flex-col space-y-3 text-sm text-slate-300 md:ml-8 lg:text-sm">
           <a href="#" class="hover:text-brightRed">Careers</a>
           <a href="#" class="hover:text-brightRed">Community</a>
           <a href="#" class="hover:text-brightRed">Privacy Policy</a>
@@ -307,14 +310,15 @@
       <div class="flex flex-col justify-between">
         <form action="">
           <div class="flex space-x-3">
-            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none placeholder:text-sm"
+            <input type="email"
+              class="flex-1 px-4 rounded-full focus:outline-none placeholder:text-sm xl:placeholder:text-xs"
               placeholder="Update in your inbox...">
             <button
-              class="px-6 py-2 text-sm text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+              class="px-6 py-2 text-sm text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none xl:text-xs xl:py-3 ">
               Go</button>
           </div>
         </form>
-        <div class="hidden text-white md:block">
+        <div class="hidden text-darkGrayishBlue text-end md:block lg:text-xs ">
           Copyright &copy; 2022, All Rights Reserved
         </div>
       </div>
